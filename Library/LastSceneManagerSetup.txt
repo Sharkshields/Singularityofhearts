@@ -1,17 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Main Menu.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Settings.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Wiki.unity
+- path: Assets/Scenes/Glava 1.unity
   isLoaded: 1
   isActive: 1
-  isSubScene: 0
-- path: Assets/Scenes/SampleScene.unity
-  isLoaded: 0
-  isActive: 0
   isSubScene: 0

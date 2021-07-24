@@ -1,42 +1,52 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp.dll:
-    - CSVManager
-    - CSVReader
     Fungus.dll:
     - Fungus.Block
+    - Fungus.Call
     - Fungus.Character
     - Fungus.Clickable2D
+    - Fungus.CommandCopyBuffer
     - Fungus.CustomTag
     - Fungus.DialogInput
     - Fungus.Draggable2D
     - Fungus.ExecuteHandler
+    - Fungus.FadeToView
     - Fungus.Flowchart
     - Fungus.FungusState
     - Fungus.GameStarted
     - Fungus.InfoText
+    - Fungus.IntegerVariable
     - Fungus.Localization
     - Fungus.LuaBindings
     - Fungus.LuaEnvironment
     - Fungus.LuaScript
     - Fungus.LuaStore
     - Fungus.LuaUtils
+    - Fungus.Menu
     - Fungus.MenuDialog
     - Fungus.NarrativeLogEntryDisplay
     - Fungus.NarrativeLogEntryUI
     - Fungus.NarrativeLogMenu
     - Fungus.Parallax
+    - Fungus.Portrait
     - Fungus.SaveData
     - Fungus.SaveMenu
+    - Fungus.SavePoint
+    - Fungus.Say
     - Fungus.SayDialog
     - Fungus.SelectOnEnable
+    - Fungus.SetVariable
     - Fungus.Stage
     - Fungus.View
     - Fungus.Writer
     - Fungus.WriterAudio
     FungusEditor.dll:
+    - Fungus.EditorUtils.BlockEditor
+    - Fungus.EditorUtils.BlockInspector
     - Fungus.EditorUtils.FlowchartWindow
     - Fungus.EditorUtils.FungusEditorResources
+    FungusExamples.dll:
+    - CustomScript
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -59,14 +69,11 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
-    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -96,7 +103,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/Wiki.unity:
+    Assets/Scenes/Glava 1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -117,11 +124,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -136,11 +149,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1480}
     - Class: 114
-      Script: {instanceID: 1544}
-    - Class: 114
       Script: {instanceID: 1702}
     - Class: 114
       Script: {instanceID: 1732}
+    - Class: 114
+      Script: {instanceID: 1744}
     - Class: 114
       Script: {instanceID: 1772}
     - Class: 114
@@ -150,11 +163,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1912}
     - Class: 114
+      Script: {instanceID: 1976}
+    - Class: 114
       Script: {instanceID: 2136}
     - Class: 114
       Script: {instanceID: 2164}
     - Class: 114
-      Script: {instanceID: 2344}
+      Script: {instanceID: 2318}
     - Class: 114
       Script: {instanceID: 2358}
     - Class: 114
@@ -176,7 +191,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3096}
     - Class: 114
-      Script: {instanceID: 3114}
+      Script: {instanceID: 3154}
+    - Class: 114
+      Script: {instanceID: 3176}
     - Class: 114
       Script: {instanceID: 3242}
     - Class: 114
@@ -189,6 +206,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3658}
     - Class: 114
       Script: {instanceID: 3676}
+    - Class: 114
+      Script: {instanceID: 3684}
     - Class: 114
       Script: {instanceID: 3716}
     - Class: 114
@@ -210,6 +229,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4268}
     - Class: 114
+      Script: {instanceID: 4350}
+    - Class: 114
       Script: {instanceID: 4480}
     - Class: 114
       Script: {instanceID: 4686}
@@ -219,6 +240,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4810}
     - Class: 114
       Script: {instanceID: 4954}
+    - Class: 114
+      Script: {instanceID: 4970}
     - Class: 114
       Script: {instanceID: 5046}
     - Class: 114
@@ -240,11 +263,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5880}
     - Class: 114
+      Script: {instanceID: 6162}
+    - Class: 114
       Script: {instanceID: 6446}
     - Class: 114
       Script: {instanceID: 6468}
-    - Class: 114
-      Script: {instanceID: 20178}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -328,7 +351,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 3a7d35a9a518a07044f98202ee4ce560
+      Hash: 312debf183b63de276c5662b575776ba
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CSVReader
@@ -2764,5 +2787,6 @@ ScriptsOnlyBuild:
     className: FungusPriorityIncrease
   platform: 5
   scenePathNames:
-  - Assets/Scenes/Wiki.unity
-  playerPath: C:/Unity/Builds/Singularityofhearts/Singularity of hearts.exe
+  - Assets/Scenes/Glava 1.unity
+  playerPath: "E:/UNITI/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Singularity
+    of hearts.exe"
