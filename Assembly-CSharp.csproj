@@ -67,7 +67,6 @@
     <Compile Include="Assets\Scripts\Scene Management\SaveMusic.cs" />
     <Compile Include="Assets\Scripts\Scene Management\MusicManager.cs" />
     <Compile Include="Assets\Scripts\Scene Management\SceneMenager.cs" />
-    <Compile Include="Assets\Scripts\Fade UI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
