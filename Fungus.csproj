@@ -601,9 +601,9 @@
     <Compile Include="Assets\Fungus\Scripts\Components\FungusState.cs" />
     <Compile Include="Assets\Fungus\Scripts\Commands\Break.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\MoonSharp\Interpreter\Interop\IUserDataType.cs" />
+    <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\MoonSharp\Interpreter\REPL\ReplInterpreterScriptLoader.cs" />
     <Compile Include="Assets\Fungus\Scripts\EventHandlers\MonoBehaviour\Trigger.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\MoonSharp\Interpreter\Tree\Statements\LabelStatement.cs" />
-    <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\MoonSharp\Interpreter\REPL\ReplInterpreterScriptLoader.cs" />
     <Compile Include="Assets\Fungus\Scripts\Commands\Else.cs" />
     <Compile Include="Assets\Fungus\Scripts\Commands\ScaleAdd.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\MoonSharp\Interpreter\Platforms\PlatformAccessorBase.cs" />
