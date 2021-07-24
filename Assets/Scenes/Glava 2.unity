@@ -1542,7 +1542,6 @@ GameObject:
   - component: {fileID: 455534972}
   - component: {fileID: 455534961}
   - component: {fileID: 455534960}
-  - component: {fileID: 455534970}
   - component: {fileID: 455535076}
   - component: {fileID: 455535075}
   - component: {fileID: 455535074}
@@ -1612,7 +1611,6 @@ GameObject:
   - component: {fileID: 455535090}
   - component: {fileID: 455535089}
   - component: {fileID: 455535088}
-  - component: {fileID: 455535087}
   - component: {fileID: 455535086}
   - component: {fileID: 455535085}
   - component: {fileID: 455535084}
@@ -1623,6 +1621,11 @@ GameObject:
   - component: {fileID: 455535079}
   - component: {fileID: 455535078}
   - component: {fileID: 455535077}
+  - component: {fileID: 455534962}
+  - component: {fileID: 455534966}
+  - component: {fileID: 455534965}
+  - component: {fileID: 455534963}
+  - component: {fileID: 455534969}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1690,6 +1693,44 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &455534962
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455534959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 965
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Glava 3
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &455534963
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455534959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 967
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Main Menu
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!114 &455534964
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1717,6 +1758,50 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &455534965
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455534959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000864f8e9e1748a39807861d0e60e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 455534966}
+  suppressBlockAutoSelect: 0
+  keyPressType: 0
+  keyCode: 27
+--- !u!114 &455534966
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455534959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 135.5404
+    y: -15.73813
+    width: 128.04877
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 966
+  blockName: Back to menu
+  description: 
+  eventHandler: {fileID: 455534965}
+  commandList:
+  - {fileID: 455534969}
+  - {fileID: 455534963}
+  suppressAllAutoSelections: 0
 --- !u!114 &455534967
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1772,7 +1857,7 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &455534970
+--- !u!114 &455534969
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1781,12 +1866,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 455534959}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c6dd8d3a780f4d1ea772e3daf10c372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 455535027}
-  suppressBlockAutoSelect: 0
-  waitForFrames: 1
+  itemId: 968
+  indentLevel: 0
+  targetObjects:
+  - {fileID: 541971363}
+  tweenType: 2
+  waitUntilFinished:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  fadeMode: 0
+  targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  targetAlpha:
+    floatRef: {fileID: 0}
+    floatVal: 0
 --- !u!114 &455534971
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2630,7 +2730,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 522.6908
     y: 57.940704
-    width: 60
+    width: 79.26829
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2938,7 +3038,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 414.81686
     y: 33.175457
-    width: 60
+    width: 73.17073
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2994,7 +3094,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 414.11102
     y: 93.71764
-    width: 60
+    width: 78.048775
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3330,14 +3430,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 177.80057
     y: 50.32416
-    width: 60
+    width: 65.85365
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 22
   blockName: G2
   description: 
-  eventHandler: {fileID: 455534970}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 455535026}
   - {fileID: 455535025}
@@ -3368,11 +3468,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 210.0895, y: 29.529957}
+  scrollPos: {x: 170.55705, y: 63.299095}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 643
-  zoom: 0.97
+  blockViewHeight: 607
+  zoom: 0.8200002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -3380,8 +3480,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 455535099}
-  selectedCommands: []
+  - {fileID: 455534966}
+  selectedCommands:
+  - {fileID: 455534969}
   variables:
   - {fileID: 455534996}
   description: 
@@ -4211,7 +4312,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 623.93146
     y: 102.4287
-    width: 60
+    width: 79.26829
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4261,7 +4362,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 628.0545
     y: 13.768988
-    width: 60
+    width: 78.048775
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5037,31 +5138,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &455535087
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455534959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 954
-  indentLevel: 0
-  text: "\u0420\u0430\u0441\u0442\u0438, \u043F\u043E\u0441\u0442\u043E\u0439!"
-  description: 
-  targetBlock: {fileID: 455535001}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
 --- !u!114 &455535088
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5399,7 +5475,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 720.83844
     y: 59.12979
-    width: 60
+    width: 80.4878
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5429,7 +5505,7 @@ MonoBehaviour:
   - {fileID: 455535081}
   - {fileID: 455535078}
   - {fileID: 455535079}
-  - {fileID: 455535087}
+  - {fileID: 455534962}
   suppressAllAutoSelections: 0
 --- !u!114 &455535100
 MonoBehaviour:
@@ -8803,7 +8879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 455535028}
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &1277485471
 Transform:
   m_ObjectHideFlags: 1
